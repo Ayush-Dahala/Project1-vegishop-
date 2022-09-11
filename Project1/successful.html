@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success Page</title>
+    <link rel="icon" type="image/x-icon" href="/assets/logo.png">
+    <script src="https://kit.fontawesome.com/9d7d2185fb.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/9d7d2185fb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
+    
+    <style>
+
+        :root {
+            --background-animate: linear-gradient(135deg, #eb543b 0%, #fbbf3b 100%);
+        }
+
+        .successfull .container-success {
+            width: 100%;
+            height: 80vh;
+            background: linear-gradient(135deg, #c5a440 0%, #91f4a8 100%);
+        }
+
+        .successfull .row-success {
+            position: absolute;
+            /* background-color: aqua; */
+            background: transparent;
+            height: 60%;
+            border-radius: 5px;
+            width: 50%;
+            top: 35%;
+            left: 47%;
+            text-align: center;
+            transform: translate(-50%, -50%);
+            margin-top: 10px;
+        }
+
+        .successfull .col-md-6-sucess {
+            margin: 20px 0px;
+
+        }
+
+        .successfull .col-md-6-sucess i {
+            color: #eb543b;
+            font-size: 75px;
+            margin-bottom: 25px;
+        }
+
+        .successfull .col-md-6-sucess h1 {
+            color: #fff;
+            font-size: 50px;
+        }
+
+        .successfull .col-md-6-sucess p {
+            font-size: 15px;
+            color: #fff;
+            margin: 10px;
+        }
+
+        .successfull .col-md-6-sucess p a { 
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .successfull .p-5-text-center {
+            height: 10rem;
+            width: 50rem;
+            margin-top: 30px;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+
+        .successfull .botttom-checkout {
+            padding: 12px;
+            font-size: 22px;
+            color: rgb(45, 44, 44);
+        }
+
+        .successfull .buttom-checkout-p {
+            padding-bottom: 20px;
+            color: rgb(95, 94, 94);
+        }
+
+        .successfull .btn-checkout {
+            margin: 11px auto;
+            width: 95%;
+            border-radius: 5px;
+            height: 50px;
+            background: #fbbf3b;
+        }
+
+        .successfull .btn-checkout a {
+            position: absolute;
+            text-align: center;
+            color: rgb(40, 40, 40);
+            margin-top: 15px;
+            left: 21rem;
+            font-weight: bold;
+        }
+        /* ---------------footer--------------- */
+        .successfull .footer-top {
+            height: 70px;
+            width: 100%;
+            background-color: #fff;
+            float: left;
+            border-bottom: 1px solid #343a40;
+            position: relative;
+        }
+
+        .successfull .selction-row {
+            width: 400px;
+            font-size: 20px;
+            padding-top: 18px;
+            padding-left: 8rem;
+        }
+
+        .successfull .custom-select {
+            height: 25px;
+            width: 5rem;
+            border: 1px solid #343a40;
+            border-radius: 5px;
+            margin: 3px;
+        }
+
+        .successfull .second {
+            width: 7rem;
+        }
+
+        .successfull .search-bar-footer {
+            position: absolute;
+            top: 20px;
+            left: 40%;
+
+            width: 600px;
+
+        }
+
+        .successfull .input-group-footer {
+            float: left;
+        }
+
+        .successfull .social-media {
+            display: flex;
+            position: relative;
+            float: right;
+            bottom: 37px;
+            padding-right: 7rem;
+            padding-top: 10px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .successfull .form-control {
+            width: 300px;
+            height: 32px;
+            border-radius: 3px;
+            padding: 5px;
+            border: 1px solid #ced4da;
+        }
+
+        .successfull .btn-subscribe {
+            height: 32px;
+            margin-left: -4px;
+            border: #fbbf3b;
+            padding: 5px;
+            border-radius: 1px;
+            color: white;
+            background: linear-gradient(135deg, #eb543b 0%, #fbbf3b 100%);
+        }
+
+        .successfull .social-media i {
+            width: 28px;
+            margin-left: 13px;
+            height: 28px;
+            text-align: center;
+            padding: 6px;
+            border-radius: 100%;
+            background-color: #bbc4ce;
+            color: black;
+
+        }
+
+        /* -----------------Middle one---------------- */
+        .successfull .footer-top {
+            height: 70px;
+            width: 100%;
+            background-color: #fff;
+            float: left;
+            border-bottom: 1px solid #343a40;
+        }
+
+        .successfull .selction-row {
+            width: 400px;
+            font-size: 20px;
+            padding-top: 18px;
+            padding-left: 8rem;
+        }
+
+        .successfull .custom-select {
+            height: 25px;
+            width: 5rem;
+            border: 1px solid #343a40;
+            border-radius: 5px;
+            margin: 3px;
+        }
+
+        .successfull .second {
+            width: 7rem;
+        }
+
+        .successfull .search-bar {
+            position: absolute;
+            top: 20px;
+            left: 40%;
+
+            width: 600px;
+
+        }
+
+        .successfull .input-group {
+            float: left;
+        }
+
+        .successfull .social-media {
+            display: flex;
+            position: relative;
+            float: right;
+            bottom: 37px;
+            padding-right: 7rem;
+            padding-top: 10px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .successfull .form-control {
+            width: 300px;
+            height: 32px;
+            border-radius: 3px;
+            padding: 5px;
+            border: 1px solid #ced4da;
+        }
+
+        .successfull .btn-subscribe {
+            height: 32px;
+            margin-left: -4px;
+            border: #fbbf3b;
+            padding: 5px;
+            border-radius: 1px;
+            color: white;
+            background: linear-gradient(135deg, #eb543b 0%, #fbbf3b 100%);
+        }
+
+        .successfull .social-media i {
+            width: 28px;
+            margin-left: 13px;
+            height: 28px;
+            text-align: center;
+            padding: 6px;
+            border-radius: 100%;
+            background-color: #bbc4ce;
+            color: black;
+
+        }
+
+        /* -----------------Middle one---------------- */
+
+        .successfull .footer {
+            /* background-color: #fff; */
+            width: 100%;
+            height: 24rem;
+            background-color: #faf2f5;
+            font-size: 1rem;
+            border-bottom: 1px solid #343a40;
+            padding: 10px;
+        }
+
+        .successfull .container {
+            width: 80%;
+            margin: 7em auto;
+        }
+
+        .successfull .row {
+            display: flex;
+            color: #343a40;
+            justify-content: space-around;
+            align-items: center;
+            /* margin: 0px -2px; */
+            padding: 55px 1px;
+
+        }
+
+        .successfull .footer-col {
+            margin: 0 5px;
+        }
+
+        .successfull .footer-col h2 {
+            color: black;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        .successfull .footer-col ul li {
+            color: #343a40;
+            font-size: 13px;
+            margin-bottom: 20px;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        .successfull .footer-col ul li a {
+            color: #343a40;
+            text-decoration: none;
+        }
+
+        /* -------------------Last section-------------- */
+        .successfull .footer-bottom {
+            width: 100%;
+            height: 75px;
+            background-color: #fff;
+        }
+
+        .successfull .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .successfull .row1 {
+            display: flex;
+            color: #343a40;
+            justify-content: space-between;
+            align-items: center;
+            padding: 3px 0;
+            padding-top: 18px;
+        }
+
+        .successfull .col-md-6 span a {
+            color: #343a40;
+            text-decoration: none;
+        }
+
+        .successfull .col-md-6 span {
+            margin-right: 5px;
+            font-size: 1rem;
+        }
+
+        .successfull .col-md-6 a img {
+            height: 30px;
+        }
+
+        @media screen and (max-width:700px) {
+            .successfull .successfull .row {
+                flex-direction: column;
+                padding-top: 5px;
+            }
+
+            .successfull .successfull .col-md-6 {
+                margin-bottom: 10px;
+            }
+        }
+
+        @media screen and (max-width:400px) {
+            .successfull .row {
+                flex-direction: column;
+            }
+
+            .successfull .col-md-6 {
+                margin-bottom: 10px;
+                text-align: center;
+            }
+
+            .successfull .col-md-6 span {
+                display: block;
+                margin-top: 3px;
+            }
+        }
+        /* <!-- -------------Home/Success--------------- --> */
+         .details {
+            width: 100%;
+            height: 40px;
+            background: #f7f7f8;
+        }
+
+         .details-header {
+            width: 80%;
+            padding: 10px;
+            margin: 0px auto;
+            color: #9da0a2;
+        }
+        .details-header span{
+            color: #eb543b;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+
+    <div class="header">
+        <div class="top-bar">
+          <div class="container1">
+              <div class="row1">
+                  <div class="col-md-6">
+                      <ul class="l-top">
+                          <a href="#"><i class="fa-solid fa-check icon"></i>Accurate Weight</a>
+                          <a href="#"><i class="fa-solid fa-check icon"></i>Fresh & Fast</a>
+                          <a href="#"><i class="fa-solid fa-check icon"></i>Sorted Vegetables</a>
+                      </ul>
+                  </div>
+                  <div class="col-md-6">
+                      <ul class="r-top" style="float: right;">
+                          <a href="#">
+                              <i class="fa-solid fa-headphones icon"></i>Helpline : 910-313-1728
+                          </a>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <nav class="navbar">
+          <div class="navbar-container">
+              <div class="right-top">
+                  <a href="#"><img src="./assets/logo.png" alt=""></a>
+                  <div class="location">
+                      <div class="btn">
+                          <i class="fa-solid fa-location-pin"></i>
+                      </div>
+                      <div class="text">
+                          <p>Select Location</p>
+                          <span>Maharashtra India...</span>
+                      </div>
+                      <div class="bell-dropdown1">
+                          <div class="contnet2">
+                              <p class="upper-text">Select your city to start shopping</p>
+                              <form>
+                                  <input type="search" name="search" class="search-city" placeholder="Search your location">
+                                  <button class="detect"><i class="fa-solid fa-paper-plane"></i>Detect</button>
+                              </form>
+                              <h3>Top cities</h3>
+                              <ul>
+                                  <li class="list-item">Delhi</li>
+                                  <li class="list-item">Punjab</li>
+                                  <li class="list-item">UP</li>
+                                  <li class="list-item">Banglore</li>
+                  
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="input">
+                      <input type="text" class="text-input" placeholder="Search for Products....">
+                      <div class="btn1" style="border-radius:2px" ;>
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                      </div>
+                  </div>
+              </div>
+              <div class="right-top">
+                  <div class="btn content">
+                      <i class="fa-solid fa-right-to-bracket"></i>
+                  </div>
+                  <div class="user content">
+                      <img src="./assets/user.png" alt="">
+                      <p class="internal"> Hi Osahan
+                          <i class="fa-solid fa-caret-down"></i>
+                      </p>
+                  </div>
+                  <div class="btn content dropdown">
+                      <i class="fa-solid fa-bell"></i>
+                      <div class="bell-dropdown">
+                          <div class="content1">
+                              <h3>Yah! order Complete</h3>
+                              <i class="fa-solid fa-calendar-days"></i>
+                              <p class="text"> Today, 5:14 pm</p>
+                              <div class="img">
+                                  <i class="fa-solid fa-circle-check"></i>
+                              </div>
+                          </div>
+                          <div class="content1">
+                              <h3 class="text">Yah! order Complete</h3>
+                              <i class="fa-solid fa-calendar-days"></i>
+                              <p> Today, 5:14 pm</p>
+                          </div>
+                          <div class="content1">
+                              <h3>Yah! order Complete</h3>
+                              <i class="fa-solid fa-calendar-days"></i>
+                              <p class="text">Today, 5:14 pm</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="btn  content">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                  </div>
+              </div>
+          </div>
+      </nav>
+      <div class="bottom-bar" >
+          <div class="container" >
+              <div class="row" >
+                  <ul>
+                      <a href="Home.html"><li>Home</li></a>
+                      <a href="Details.html" style="text-decoration: none;color:inherit"><li class="dropdown">Product <i class="fa-solid fa-caret-down"></i>
+                          <ul class="internal1" style="z-index: 2;">
+                              <li>List</li>
+                              <li>Treading</li>
+                              <li>Details</li>
+                              <li>Most Popular</li>
+                          </ul>
+                      </li>
+                    </a>
+    
+                     <a href="successful.html" style="text-decoration: none;color:inherit"><li class="dropdown">Checkout Process <i class="fa-solid fa-caret-down"></i>
+                          <ul class="internal1" style="z-index: 2">
+                              <li>Cart</li>
+                              <li>Checkout</li>
+                              <li>Successful</li>
+                              <li>Most Popular</li>
+                          </ul>
+                      </li>
+                    </a>
+    
+                     <a href="Order.html" style="text-decoration: none;color:inherit"><li class="dropdown">My Order <i class="fa-solid fa-caret-down"></i>
+                          <ul class="internal1" style="z-index: 2">
+                              <li>Order</li>
+                              <li>Status</li>
+                              <li>Bonus</li>
+                              <li>Discount</li>
+                          </ul>
+                      </li>
+                    </a>
+                     <a href="contact.html" style="text-decoration: none;color:inherit"><li class="dropdown">Extra Page<i class="fa-solid fa-caret-down"></i>
+                          <ul class="internal1" style="z-index: 2">
+                              <li>Sign Up</li>
+                              <li>Sign In</li>
+                              <li>Verification</li>
+                              <li>Privacy</li>
+                              <li>Condition</li>
+                              <li>Search</li>
+                              <li>FAQ</li>
+                              <li>Support</li>
+                              <li>Terms & Conditions</li>
+                          </ul>
+                      </li>
+                    </a> 
+                      <ul class="right-side" style="z-index: 2">
+                        <li><a href="#">Trending</a></li>
+                        <span style="text-align:center">
+                            <li><a href="#">Promo</a></li>
+                        </span>
+                    </ul>
+                  </ul>
+                  
+              </div>
+    
+          </div>
+      </div>
+      <section class="details">
+          <div class="details-header">
+              <span>Home</span>/ Success
+          </div>
+  
+      </section>
+        </div>
+
+
+    <!-- -------------Home/Success--------------- -->
+    <div class="successfull" style="position: relative;">
+    
+    <!-- -------------------Checkoutpage------------------ -->
+    <div class="container-success">
+        <div class="row-success">
+            <div class="col-md-6-sucess">
+                <i class="fa-solid fa-circle-check"></i>
+                <h1 class="text-chekout">Osahan, Your order has been successful 🎉</h1>
+                <p class="para-checkout">Check your order status in <a href="complete_order.html">My Order</a> about
+                    next
+                    steps information.</p>
+            </div>
+            <div class="p-5-text-center">
+                <h5 class="botttom-checkout">Preparing your order</h5>
+                <p class="buttom-checkout-p">Your order will be prepared and will come soon</p>
+                <div class="btn-checkout">
+                    <a href="#">Track My Order</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- --------------------------Foooter------------------------------ -->
+    <div class="footers" style="margin-top:55px">
+        <section class="footer-top footers">
+          <div class="container1">
+              <div class="selction-row">
+                  <select class="custom-select" style="font-size:13px">
+                      <option>USD</option>
+                      <option>EUR</option>
+                      <option>RUBL</option>
+                  </select>
+                  <select class="custom-select second" style="font-size:13px">
+                      <option>United States</option>
+                      <option>Russia</option>
+                      <option>Uzbekistan</option>
+                  </select>
+              </div>
+              <div class="search-bar" >
+                  <div class="input-group" style="display:flex">
+                      <input type="text" placeholder="Email" class="form-control" name="" style="width:519px;height:20px">
+                      <button type="submit" class="btn-subscribe"> Subscribe</button>
+                  </div>
+              </div>
+              <div class="social-media">
+                  <a href="#" class="btn btn-icon btn-light"><i style="height:18px;width:20px" class="fa-brands fa-facebook"></i></a>
+                  <a href="#" class="btn btn-icon btn-light"><i style="height:18px;width:20px" class="fa-brands fa-twitter"></i></a>
+                  <a href="#" class="btn btn-icon btn-light"><i style="height:18px;width:20px" class="fa-brands fa-instagram"></i></a>
+                  <a href="#" class="btn btn-icon btn-light"><i style="height:18px;width:20px" class="fa-brands fa-youtube"></i></a>
+              </div>
+          </div>
+      </section>
+      <footer class="footer">
+          <div class="container">
+              <div class="row0" style="padding-left: 0px;padding-right:0px">
+                  <div class="footer-col">
+                      <h2 style="text-align: center;font-weight:600;margin-left: 23px;">Product</h2>
+                      <ul style="text-align: center;" >
+                          <li class="mb-4">
+                              <a href="#">About</a>
+                          </li>
+                          <li class="mb-4">
+                              <a href="#">Careers</a>
+                          </li>
+                          <li class="mb-4">
+                              <a href="#">Brand Center</a>
+                          </li>
+                          <li class="mb-4">
+                              <a href="#">Blog</a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="footer-col">
+                      <h2 style="text-align: center;font-weight:600;margin-left: 23px;">Checkout Process</h2>
+                      <ul style="text-align: center;">
+                          <li class="mb-4">
+                              <a href="#" class=" li">About</a>
+                          </li>
+                          <li class="mb-4">
+                              <a href="#" class="li">Careers</a>
+                          </li>
+                          <li class="mb-4">
+                              <a href="#" class="li">Brand Center</a>
+                          </li>
+                          <li class="mb-4">
+                              <a href="#" class="li">Blog</a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="footer-col">
+                      <h2 style="text-align: center;font-weight:600;margin-left: 22px;">My Order</h2>
+                      <ul style="text-align: center;">
+                          <li class="mb-4">
+                              <a href="#" class="li">Discord Server</a>
+                          </li>
+                          <li class="mb-4">
+                              <a href="#" class="li">Twitter</a>
+                          </li>
+                          <li class="mb-4">
+                              <a href="#" class="li">Facebook</a>
+                          </li>
+                          <li class="mb-4">
+                              <a href="#" class="li">Contact Us</a>
+                          </li>
+      
+                      </ul>
+                  </div>
+                  <div class="footer-col">
+                      <h2 style="text-align: center;font-weight:600;margin-left: 23px;">My Account</h2>
+                      <ul style="text-align: center;" >
+                          <li class="mb-4">
+                              <a href="#" class="li">Privacy Policy</a>
+                          </li>
+                          <li class="mb-4">
+                              <a href="#" class="li">Licensing</a>
+                          </li>
+                          <li class="mb-4">
+                              <a href="#" class="li">Terms &amp; Conditions</a>
+                          </li>
+                          <li class="mb-4">
+                              <a href="#" class="li">Blog</a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="footer-col">
+                      <h2 style="text-align: center;font-weight:600;margin-left: 10px;">Extra</h2>
+                      <ul class="text-gray-500 dark:text-gray-400">
+                          <li class="mb-4">
+                              <a href="#" class="li">iOS</a>
+                          </li>
+                          <li class="mb-4">
+                              <a href="#" class="li">Android</a>
+                          </li>
+                          <li class="mb-4">
+                              <a href="#" class="li">Windows</a>
+                          </li>
+                          <li class="mb-4">
+                              <a href="#" class="li">MacOS</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </footer>
+      <section class="footer-bottom">
+          <div class="container">
+              <div class="row1">
+                  <div class="col-md-6">
+                      <span class="pr-2">© 2021 Vegishop</span>
+                      <span class="pr-2"><a href="privacy.html" class="text-dark">Privacy</a></span>
+                      <span class="pr-2"><a href="terms&conditions.html" class="text-dark">Terms & Conditions</a></span>
+                  </div>
+                  <div class="col-md-6 text-md-right">
+                      <a href=""><img src="./assets/appstore.png" style="float:right"></a>
+                      <a href=""><img src="./assets/playmarket.png" style="float:right"></a>
+                  </div>
+              </div>
+      
+          </div>
+      
+      </section>
+      </div>
+</body>
+
+</html>
